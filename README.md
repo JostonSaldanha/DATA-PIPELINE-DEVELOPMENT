@@ -167,3 +167,9 @@ The transformed X_train and X_test datasets are now ready to be fed into machine
 
 X_train = pd.DataFrame(preprocessor.fit_transform(X_train), columns=preprocessor.get_feature_names_out())
 X_test = pd.DataFrame(preprocessor.transform(X_test), columns=preprocessor.get_feature_n)
+
+
+## Output
+![Image](https://github.com/user-attachments/assets/5ba68d87-4aff-488f-a18c-5e40fc3565e9)
+![Image](https://github.com/user-attachments/assets/61e7a755-8162-4a76-b17a-ee0dcfc9cf0a)
+![Image](https://github.com/user-attachments/assets/e0b7d2ae-8cb0-4fa2-9567-a1d302ae2625)
