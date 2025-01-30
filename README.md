@@ -14,6 +14,11 @@
 
 ## Detailed description of the task
 
+### Objective
+
+The primary goal of this project is to build an end-to-end machine learning data pipeline for predicting diamond prices based on various attributes. The task involves preprocessing the dataset, transforming it into a usable format, and creating a pipeline for machine learning models. The final preprocessed dataset ensures data consistency, scalability, and better model performance.
+
+
 ### Tools and Libraries Used:
 
 #### Pandas:
@@ -21,14 +26,16 @@
 Purpose: Pandas is a powerful Python library primarily used for data manipulation and analysis. It simplifies tasks such as reading data, handling missing values, and performing exploratory data analysis (EDA).
 
 Usage in the Task:
-Used to load the dataset (train.csv) into a DataFrame.
-Columns were selected and manipulated using Pandas' built-in functions (select_dtypes for differentiating categorical and numerical features, drop for removing unnecessary columns).
-Why Pandas?: Pandas offers an intuitive API for handling tabular data and integrates seamlessly with other Python libraries like NumPy, making it a preferred choice for data preprocessing.
+Used to load the dataset (train.csv) into a DataFrame.Columns were selected and manipulated using Pandas' built-in functions (select_dtypes for differentiating categorical and numerical features, drop for removing unnecessary columns).
+
+Why Pandas?: 
+Pandas offers an intuitive API for handling tabular data and integrates seamlessly with other Python libraries like NumPy, making it a preferred choice for data preprocessing.
 
 
 #### Scikit-learn:
 
 Purpose: Scikit-learn is a widely used machine learning library in Python. It provides tools for data preprocessing, model building, evaluation, and pipelines for streamlining workflows.
+
 Usage in the Task:
 SimpleImputer: Handles missing values in both numerical and categorical data. Missing numerical values are replaced with the mean (default strategy), while missing categorical values are replaced with the most frequent value.
 StandardScaler: Standardizes numerical features by scaling them to have a mean of 0 and a standard deviation of 1.
@@ -36,12 +43,15 @@ OrdinalEncoder: Converts categorical values into numerical values based on prede
 Pipeline: A Scikit-learn feature that combines multiple preprocessing steps into a single, reusable workflow for numerical and categorical data.
 ColumnTransformer: Allows applying different preprocessing steps to different subsets of features (e.g., separate pipelines for numerical and categorical columns).
 Train-test Split: Splits the data into training and testing subsets to evaluate the pipeline.
-Why Scikit-learn?: Its modular and flexible design enables efficient data preprocessing, making it ideal for tasks involving transformations and machine learning.
+
+Why Scikit-learn?: 
+Its modular and flexible design enables efficient data preprocessing, making it ideal for tasks involving transformations and machine learning.
 
 
 ### Editor/Platform Used
 
 VS Code (Visual Studio Code)
+
 Jupyter Notebook
 
 
@@ -170,6 +180,7 @@ X_test = pd.DataFrame(preprocessor.transform(X_test), columns=preprocessor.get_f
 
 
 ## Output
+
 ![Image](https://github.com/user-attachments/assets/5ba68d87-4aff-488f-a18c-5e40fc3565e9)
 ![Image](https://github.com/user-attachments/assets/61e7a755-8162-4a76-b17a-ee0dcfc9cf0a)
 ![Image](https://github.com/user-attachments/assets/d621167c-1023-4c74-8216-53e2e95cb0ba)
